@@ -12,7 +12,7 @@ from typing import List
 
 def get_requirements(file_path:str) -> List[str]:
     requirements=[]
-    with open(file_path, 'r') as f:
+    with open(file_path) as f:
         requirements = f.readlines()
         requirements = [req.strip() for req in requirements]
         return requirements
@@ -33,8 +33,7 @@ and run the following command to build the package: python setup.py install
 06. going to your github account and create a repo. and .... 
 git init
 git add .
-git status    # kya kya add hua
-git add README.md
+git status    # dekhte hai kya kya add hua
 git commit -m "first commit"
 git branch -M main
 git remote add origin https://github.com/amanraghavkumar/infosys.git
