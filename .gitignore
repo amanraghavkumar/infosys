@@ -1,0 +1,4 @@
+inenv/
+build/
+dist/
+Stock_price_prediction.egg-info/
